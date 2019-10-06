@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UI_KIT</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Cookie|Kaushan+Script|Permanent+Marker|Satisfy&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+    
+    <!--mobile menu-->
+    <header>
+        <div class="uk-hidden@m">
+            <!--div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"  class="uk-offcanvas-content"-->
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;" class="uk-offcanvas-content">
+                <nav class="uk-navbar uk-navbar-container uk-margin">
+                    <div class="uk-navbar-left">
+                        <!--img src="myPic.jpg" class="uk-border-circle" width="90"-->
+                        <span uk-icon="icon: home; ratio: 5"></span>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-flip"></a>
+                    </div>
+
+                    <div id="offcanvas-flip" uk-offcanvas="flip: true;mode: slide; overlay: true">
+                        <div class="uk-offcanvas-bar">
+
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                            <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-active"><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>                               
+                                    <li><a href="#skill">Skills</a></li>
+                                    <li><a href="#work">Work</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="index.html">Others</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+        </div>
+
+        <!--end of mobile menu-->
+
+        <div class="uk-visible@m">
+           <!--div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"  class="uk-offcanvas-content"--> 
+           <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;" class="uk-offcanvas-content">
+            <nav class="uk-navbar uk-navbar-container uk-margin">
+               <div class="uk-navbar-left">
+                    <!--img src="myPic.jpg" class="uk-border-circle" width="90"-->
+                    <span uk-icon="icon: home; ratio: 5"></span>
+                </div> 
+                <div class="uk-navbar-right">
+                     <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>                               
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="index.html">Others</a></li>
+                    </ul>
+                </div>
+            </nav>
+           </div>
+        </div>
+    </header>
+
+        <!--end of Navbar-->
+
+        <!--home-->
+
+        <section>
+            <div uk-scrollspy="cls: uk-animation-fade; repeat: true">
+            <!--div uk-scrollspy="target: .scroll ; delay: 1000; repeat: true"-->
+            <div class="uk-text-center uk-light" data-src="image.png" uk-img>                
+                    <h1 class="uk-animation-scale-up scroll font-head" id="home">Hey people!...</h1>
+                    <img src="myPic.jpg" class="uk-border-circle uk-animation-kenburns scroll" width="200">
+                    <h2 class="uk-animation-scale-down scroll font-head">Welcome to my page</h2>
+            </div> 
+            </div>           
+        </section>
+
+        <!--end of home-->
+
+        <!--About-->
+        
+        <section>
+
+            <div class=" uk-margin-large-top uk-text-center uk-text-bold" uk-scrollspy="cls:uk-animation-scale-up">
+                <h1 id="about" class="heading">ABOUT</h1>
+            </div>
+            <br>
+
+            <div class="uk-container uk-text-center">
+                <ul class="uk-child-width-expand uk-text-bolder" uk-tab>
+                    <li class="uk-active font-head"><a href="#">PROFILE</a></li>
+                    <li class="font-head"><a href="#">EDUCATION</a></li>
+                    <li class="font-head"><a href="#">COURSE</a></li>                    
+                </ul>
+            
+            
+                <ul class="uk-switcher uk-margin uk-margin-left uk-margin-right uk-box-shadow-xlarge">
+                    <li>
+                        <div uk-scrollspy="target: .scroll ; delay: 1000; repeat: true">
+                            <div class=" font-para" uk-scrollspy="cls:uk-animation-scale-up">
+                                Ability to create responsive, interactive & creative web designs to boost customer experience.<br> Sound knowledge in javaScript, HTML5,JQuery, AngularJS & other UI frameworks.<br>Can build reusable components for future use with optimized web performance.<br> Self-motivated, committed towards work and can perform well under tight-deadlines. <br>
+                                
+                                Email: 5chhavijoshi@gmail.com<br>
+                                Skype: samtajoshi5@outlook.com<br><br> 
+                                github: 
+                                <a href="https://github.com/samtajoshi">GITHUB</a><br>                           
+                                Contact Number- +91-9479464665, +91-9462730881 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div uk-scrollspy="cls:uk-animation-scale-up">
+                            <dl class="uk-description-list uk-description-list-divider">
+                                <dt><div class="uk-text-bold font-head">Degree in Electronics and Communication</div></dt>
+                                <dd><div class="font-para">UNIVERSITY: IIITDM Jabalpur</div></dd>
+                                <dd><div class="font-para">YEAR: 2014-18</div></dd>
+                                <dt><div class="uk-text-bold font-head">CBSE XII</div></dt>
+                                <dd><div class="font-para">SCHOOL: Vivekananda Kendra Vidyalaya, Hurda</div></dd>
+                                <dd><div class="font-para">YEAR: 2013</div></dd>
+                                <dt><div class="uk-text-bold font-head">CBSE X</div></dt>
+                                <dd><div class="font-para">SCHOOL:  Vivekananda Kendra Vidyalaya, Hurda</div></dd>
+                                <dd><div class="font-para">YEAR: 2011</div></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div uk-scrollspy="cls:uk-animation-scale-up">
+                            <dl class="uk-description-list uk-description-list-divider">
+                                <dt><div class="uk-text-bold font-head">Frontend Development Course(ongoing)</div></dt>
+                                <dd><div class="font-para">PLATFORM: Edwisor</div></dd>
+                                <dd><div class="font-para">YEAR: 2019</div></dd>
+                            </dl>
+                        </div>
+                    </li>         
+                </ul> 
+            </div>
+
+                
+        </section>
+
+<!--end of about-->
+
+<!--skill-->
+
+<section id="skill">
+
+            <div uk-scrollspy="cls:uk-animation-scale-up" class=" uk-margin-large-top uk-text-center uk-text-bold">
+                <h1 id="skill" class="heading">SKILLS</h1>
+            </div>
+            <div class="uk-padding-small uk-margin-left uk-margin-right " uk-scrollspy="cls:uk-animation-scale-up">
+                <dl class="uk-description-list uk-description-list-divider">
+                    <dt>
+                        <div class="uk-text-bold font-head">HTML5</div>
+                    </dt>
+                    <dd>
+                        <div class="font-para">No details available.</div>
+                    </dd>
+                    <dt>
+                        <div class="uk-text-bold font-head">Responsive web designing</div>
+                    </dt>
+                    <dd>
+                        <div class="font-para">No details available.</div>
+                    </dd>
+                    <dt>
+                        <div class="uk-text-bold font-head">javascript</div>
+                    </dt>
+                    <dd>
+                        <div class="font-para">No details available.</div>
+                    </dd>
+                    <dt>
+                        <div class="uk-text-bold font-head">jquery</div>
+                    </dt>
+                    <dd>
+                        <div class="font-para">No details available.</div>
+                    </dd>
+                    <dt>
+                        <div class="uk-text-bold font-head">bootstrap</div>
+                    </dt>
+                    <dd>
+                        <div class="font-para">No details available.</div>
+                    </dd>
+                </dl>
+            </div>
+
+</section>
+
+<!--end of skill-->
+            
+<!--work-->
+<sectio>
+    
+   <div class=" uk-margin-large-top uk-text-center uk-text-bold" uk-scrollspy="cls:uk-animation-scale-up">
+        <h1 id="work" class="heading">WORK in WEB DEVELOPMENT</h1>
+    </div>
+    <div class="uk-container uk-text-center uk-margin-large-top uk-margin-xlarge-bottom uk-padding-small uk-box-shadow-xlarge">
+        <div class="row justify-content-around">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div>
+                    <a href="http://samtajoshi.github.io">
+                        <figure>
+                            <img src="responsive.png" alt="webpage" class="pic" uk-scrollspy="cls:uk-animation-scale-down">
+                        </figure>
+                    </a>
+                </div>          
+            
+                <div class=" uk-margin font-para" uk-scrollspy="cls:uk-animation-scale-up">
+                    It's a single page responsive website using jQuery uikit.
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div>
+                    <a href="http://samtajoshi.github.io">
+                        <figure>
+                            <img src="image1.jpg" alt="web" class="pic" uk-scrollspy="cls:uk-animation-scale-down">
+                        </figure>
+                    </a>
+                </div>          
+            
+                <div class=" uk-margin font-para" uk-scrollspy="cls:uk-animation-scale-up">
+                    It is a multipage responsive website, using bootstrap.
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div>
+                    <a href="http://samtajoshi.github.io">
+                        <figure>
+                            <img src="myPic.jpg" alt="w...." class="pic" uk-scrollspy="cls:uk-animation-scale-down">
+                        </figure>
+                    </a>
+                </div>          
+            
+                <div class=" uk-margin font-para" uk-scrollspy="cls:uk-animation-scale-up">
+                    This is just for reference purpose.
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+</section>
+       
+    
+
+
+
+
+
+    </body>
+</html>

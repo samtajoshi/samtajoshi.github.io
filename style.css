@@ -1,0 +1,19 @@
+.font-head{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 2em;
+}
+
+.font-para{
+	font-family: 'Cookie', cursive;
+	font-size: 2em;
+}
+
+.heading{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3em;
+}
+
+.pic{
+	width: 30vh;
+	height: 30vh;
+}
